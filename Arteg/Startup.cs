@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Rewrite;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Net;
 
 namespace Arteg
 {
@@ -26,13 +28,19 @@ namespace Arteg
                 app.UseDeveloperExceptionPage();
             }
 
+            // if first string in the url is hit, it redirects to /en ending 
+            app.UseRewriter(new RewriteOptions()
+                .AddRewrite("localhost", "en", true)
+                .AddRewrite("atreg-env.eu-central-1.elasticbeanstalk.com", "en", true));
+
             app.UseStaticFiles();
 
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=English}/{action=IndexEnglish}/{id?}");
+
             });
         }
     }
