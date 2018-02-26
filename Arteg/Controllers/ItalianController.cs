@@ -6,28 +6,28 @@ namespace Arteg.Controllers
     [Route("it")]
     public class ItalianController : Controller
     {
-        [HttpGet, Route("")]
-        public IActionResult IndexItalian()
+        [HttpGet("")]
+        public IActionResult Index()
         {
-            return View("IndexItalian");
+            return View("Index");
         }
 
-        [HttpGet, Route("asianvital")]
-        public IActionResult AsianVitalItalian()
+        [HttpGet("asianvital")]
+        public IActionResult AsianVital()
         {
-            return View("AsianVitalItalian");
+            return View("AsianVital");
         }
 
-        [HttpGet, Route("atreg")]
-        public IActionResult AtregItalian()
+        [HttpGet("atreg")]
+        public IActionResult Atreg()
         {
-            return View("AtregItalian");
+            return View("Atreg");
         }
 
-        [HttpPost, Route("atreg")]
-        public IActionResult AtregItalian([FromBody] ContactMessage message)
+        [HttpPost("atreg")]
+        public IActionResult Atreg([FromBody] ContactMessage message)
         {
-            return View("AtregItalian");
+            return View("Atreg");
         }
     }
 }

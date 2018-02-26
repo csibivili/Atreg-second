@@ -6,28 +6,28 @@ namespace Arteg.Controllers
     [Route("it")]
     public class VietnameseController : Controller
     {
-        [HttpGet, Route("")]
-        public IActionResult IndexVietnamese()
+        [HttpGet("")]
+        public IActionResult Index()
         {
-            return View("IndexVietnamese");
+            return View("Index");
         }
 
-        [HttpGet, Route("asianvital")]
-        public IActionResult AsianVitalVietnamese()
+        [HttpGet("asianvital")]
+        public IActionResult AsianVital()
         {
-            return View("AsianVitalVietnamese");
+            return View("AsianVital");
         }
 
-        [HttpGet, Route("atreg")]
-        public IActionResult AtregVietnamese()
+        [HttpGet("atreg")]
+        public IActionResult Atreg()
         {
-            return View("AtregVietnamese");
+            return View("Atreg");
         }
 
-        [HttpPost, Route("atreg")]
-        public IActionResult AtregVietnamese([FromBody] ContactMessage message)
+        [HttpPost("atreg")]
+        public IActionResult Atreg([FromBody] ContactMessage message)
         {
-            return View("AtregVietnamese");
+            return View("Atreg");
         }
     }
 }

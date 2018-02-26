@@ -28,7 +28,7 @@ namespace Arteg
                 app.UseDeveloperExceptionPage();
             }
 
-            // if first string in the url is hit, it redirects to /en ending 
+            // if first string in the url is hit, it redirects to /en ending
             app.UseRewriter(new RewriteOptions()
                 .AddRewrite("localhost", "en", true)
                 .AddRewrite("atreg-env.eu-central-1.elasticbeanstalk.com", "en", true));

@@ -7,27 +7,27 @@ namespace Arteg.Controllers
     public class EnglishController : Controller
     {
         [HttpGet("")]
-        public IActionResult IndexEnglish()
+        public IActionResult Index()
         {
-            return View("IndexEnglish");
+            return View("Index");
         }
 
         [HttpGet("asianvital")]
-        public IActionResult AsianVitalEnglish()
+        public IActionResult AsianVital()
         {
-            return View("AsianVitalEnglish");
+            return View("AsianVital");
         }
 
         [HttpGet("atreg")]
-        public IActionResult AtregEnglish()
+        public IActionResult Atreg()
         {
-            return View("AtregEnglish");
+            return View("Atreg");
         }
 
         [HttpPost("atreg")]
-        public IActionResult AtregEnglish([FromBody] ContactMessage contactMessage)
+        public IActionResult Atreg([FromBody] ContactMessage message)
         {
-            return View("AtregEnglish");
+            return View("Atreg");
         }
     }
 }
