@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Arteg.Models.ContactMessage
+@{
     ViewData["Title"] = "Atreg";
 }
 <!-- Start LOGO & LANGUAGE-->
@@ -200,21 +201,29 @@
         <div class="row justify-content-md-center">
             <div class="col-lg-10 p-3">
                 <h5 class="mb-3">&darr; Contact us here &darr;</h5>
-                <form>
+                <form method="post">
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Your name</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+                        <label asp-for="Name">Your name</label>
+                        <input asp-for="Name" type="text" class="form-control" id="Name" placeholder="Your Name">
+                        <span asp-validation-for="Name" class="text-muted"></span>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <label asp-for="EmailAddress">Email address</label>
+                        <input asp-for="EmailAddress" type="email" class="form-control" id="EmailAddress" placeholder="name@example.com">
+                        <span asp-validation-for="EmailAddress" class="text-muted"></span>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Your message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label asp-for="Subject">Subject</label>
+                        <input asp-for="Subject" type="text" class="form-control" id="EmailAddress">
+                        <span asp-validation-for="Subject" class="text-muted"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Text">Your message</label>
+                        <textarea asp-for="Text" class="form-control" id="Message" rows="3"></textarea>
+                        <span asp-validation-for="Text" class="text-muted"></span>
                     </div>
                     <div class="text-right">
-                        <button type="button" class="btn btn-secondary">Send</button>
+                        <button type="submit" class="btn btn-secondary">Send</button>
                     </div>
                 </form>
             </div>
