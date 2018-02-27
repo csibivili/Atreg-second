@@ -30,8 +30,8 @@ namespace Arteg
 
             //if first string in the url is hit, it redirects to / en ending
             app.UseRewriter(new RewriteOptions()
-                .addrewrite("localhost", "en", true)
-                .addrewrite("atreg-env.eu-central-1.elasticbeanstalk.com", "en", true));
+                .AddRewrite("localhost", "en", true)
+                .AddRewrite("atreg-env.eu-central-1.elasticbeanstalk.com", "en", true));
 
             app.UseStaticFiles();
 
