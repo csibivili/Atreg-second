@@ -18,19 +18,19 @@ namespace Arteg.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
-            return View("Index");
+            return View($"Index");
         }
 
         [HttpGet("asianvital")]
         public IActionResult AsianVital()
         {
-            return View("AsianVital");
+            return View($"AsianVital");
         }
 
         [HttpGet("atreg")]
         public IActionResult Atreg()
         {
-            return View("Atreg");
+            return View($"Atreg");
         }
 
         [HttpPost("atreg")]
