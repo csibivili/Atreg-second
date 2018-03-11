@@ -2584,6 +2584,7 @@ body {
 }
 
  /* PULL THE MOBILE CONTENT CLOSER */
+
 @media (max-width: 767px) {
     .mbr-section {
         padding-top: 0px;
@@ -2610,5 +2611,12 @@ body {
 
     .cid-qLKkQ4cWga hr {
         width: 80%;
+    }
+}
+
+/* INDEX PAGE VH */
+@media (min-width: 767px) {
+    .header3 {
+        min-height: 50vh;
     }
 }
