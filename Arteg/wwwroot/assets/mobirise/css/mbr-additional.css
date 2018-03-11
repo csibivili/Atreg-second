@@ -2521,7 +2521,7 @@ body {
 }
 @media (max-width: 991px) {
   .cid-qLKHiahYO2 .mbr-figure {
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
 }
 @media (max-width: 767px) {
@@ -2546,7 +2546,7 @@ body {
 }
 @media (max-width: 991px) {
   .cid-qLKHjtLGQ7 .mbr-figure {
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
 }
 @media (max-width: 767px) {
@@ -2601,6 +2601,14 @@ body {
 
     .cid-qLK2QGLlv6 .card-box {
         padding-bottom: 0px;
+    }
+
+    .indexCard {
+        padding: 20px;
+    }
+
+    .cid-qLKHiahYO2 .cid-qLKHjtLGQ7 {
+
     }
 }
 
