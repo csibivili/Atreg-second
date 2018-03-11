@@ -95,7 +95,7 @@ section {
 
 @media (max-width: 767px) {
   .align-left, .align-center, .align-right, .mbr-section-btn, .mbr-section-title {
-    margin-top: 40px;
+    margin-top: 0px;
     text-align: center; } }
 /*! Font-weight  */
 .mbr-light {
