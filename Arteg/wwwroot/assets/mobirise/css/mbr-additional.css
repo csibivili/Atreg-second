@@ -1783,6 +1783,7 @@ body {
   padding-top: 120px;
   padding-bottom: 0px;
   background-color: #ffffff;
+  min-height: 30vh;
 }
 .cid-qLK44o3FT0 .mbr-section-subtitle {
   color: #cc2952;
@@ -1795,6 +1796,7 @@ body {
   padding-top: 45px;
   padding-bottom: 135px;
   background-color: #ffffff;
+  min-height: 70vh;
 }
 .cid-qLK2QGLlv6 h4 {
   text-align: left;
@@ -2579,4 +2581,34 @@ body {
 .cid-qLKHjtLGQ7 .mbr-text,
 .cid-qLKHjtLGQ7 .mbr-section-btn {
   color: #1b191a;
+}
+
+ /* PULL THE MOBILE CONTENT CLOSER */
+@media (max-width: 767px) {
+    .mbr-section {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .cid-qLK2QGLlv6 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        min-height: 0px;
+    }
+
+    .cid-qLK44o3FT0 {
+        min-height: 0px;
+    }
+
+    .cid-qLKkQ4cWga {
+        padding-bottom: 20px;
+    }
+
+    .cid-qLKkQ4cWga .section-text {
+        margin-top: 0px;
+    }
+
+    .cid-qLKkQ4cWga hr {
+        width: 80%;
+    }
 }
