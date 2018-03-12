@@ -2606,10 +2606,6 @@ body {
     .indexCard {
         padding: 20px;
     }
-
-    .cid-qLKHiahYO2 .cid-qLKHjtLGQ7 {
-
-    }
 }
 
 /* INDEX PAGE VH */
@@ -2621,6 +2617,9 @@ body {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        -webkit-align-items: center;
         align-items: center;
     }
 }
