@@ -12,7 +12,7 @@
         <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a asp-controller="Home" asp-action="Index">
+                    <a href="#">
                         <img src="~/assets/images/logo-3-172x70.png" alt="Atreg" title="Atreg" style="height: 3.8rem;">
                     </a>
                 </span>
@@ -21,29 +21,29 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item">
-                    <a class="nav-link link text-black display-7" href="atreg.html#content4-o">
+                    <a class="nav-link link text-black display-7" href="#profileSection">
                         <span class="mbri-briefcase mbr-iconfont mbr-iconfont-btn"></span>Profile
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link text-black display-7" href="atreg.html#content4-p">
+                    <a class="nav-link link text-black display-7" href="#servicesSection">
                         <span class="mbri-extension mbr-iconfont mbr-iconfont-btn"></span>Services
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link text-black display-7" href="atreg.html#content4-19"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>Represented Companies</a>
+                    <a class="nav-link link text-black display-7" href="#representedSection"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>Represented Companies</a>
                 </li>
                 
             </ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-secondary display-7" href="atreg.html#content4-1i"><span class="mbri-letter mbr-iconfont mbr-iconfont-btn"></span>Contact Us</a></div>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-secondary display-7" href="#contactForm"><span class="mbri-letter mbr-iconfont mbr-iconfont-btn"></span>Contact Us</a></div>
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item dropdown">
-                    <a class="nav-link link text-black dropdown-toggle display-7" href="atreg.html#content4-19" aria-expanded="false" data-toggle="dropdown-submenu">
+                    <a class="nav-link link text-black dropdown-toggle display-7" aria-expanded="false" data-toggle="dropdown-submenu">
                         <span class="mbri-globe mbr-iconfont mbr-iconfont-btn"></span>EN
                     </a>
                     <div class="dropdown-menu">
-                        <a class="text-black dropdown-item display-7" href="atreg.html#content4-19" aria-expanded="false">IT</a>
-                        <a class="text-black dropdown-item display-7" href="atreg.html#content4-19" aria-expanded="false">VN</a>
+                        <a class="text-black dropdown-item display-7" asp-controller="Italian" asp-action="Atreg" aria-expanded="false">IT</a>
+                        <a class="text-black dropdown-item display-7" asp-controller="Vietnamese" asp-action="Atreg" aria-expanded="false">VN</a>
                     </div>
                 </li>
             </ul>
@@ -64,25 +64,28 @@
                 <div class="icons-media-container mbr-white">
                     <div class="card col-12 col-md-6 col-lg-3">
                         <div class="icon-block">
-                            <a href="atreg.html#content4-o"><span class="mbr-iconfont mbri-briefcase"></span></a>
+                            <a href="#profileSection"><span class="mbr-iconfont mbri-briefcase"></span></a>
                         </div>
                         <h5 class="mbr-fonts-style display-5">Profile</h5>
                     </div>
                     <div class="card col-12 col-md-6 col-lg-3">
                         <div class="icon-block ">
-                            <a href="atreg.html#content4-p"><span class="mbr-iconfont mbri-extension"></span></a>
+                            <a href="#servicesSection"><span class="mbr-iconfont mbri-extension"></span></a>
                         </div>
                         <h5 class="mbr-fonts-style display-5">Services</h5>
                     </div>
                     <div class="card col-12 col-md-6 col-lg-3">
-                        <div class="icon-block">
-                            <a href="atreg.html#content4-19"><span class="mbr-iconfont mbri-users"></span></a>
+                        <a href="#representedSection">
+                            <div class="icon-block">
+                                <span class="mbr-iconfont mbri-users"></span>
+                        
                         </div>
                         <h5 class="mbr-fonts-style display-5">Partners</h5>
+                        </a>
                     </div>
                     <div class="card col-12 col-md-6 col-lg-3">
                         <div class="icon-block">
-                            <a href="atreg.html#content4-1i"><span class="mbr-iconfont mbri-letter"></span></a>
+                            <a href="#contactForm"><span class="mbr-iconfont mbri-letter"></span></a>
                         </div>
                         <h5 class="mbr-fonts-style display-5">
                             Contact Us
