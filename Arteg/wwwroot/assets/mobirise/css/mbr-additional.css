@@ -1722,7 +1722,7 @@ body {
     position: relative;
     opacity: 1;
     height: auto;
-    padding: 1.4rem 0;
+    padding: 0;
     visibility: visible;
   }
   .cid-qLJHvgmT59 .dropdown .dropdown-submenu {
@@ -2605,6 +2605,10 @@ body {
 
     .indexCard {
         padding: 20px;
+    }
+
+    .dropdown-menu {
+        padding: 0px;
     }
 }
 
