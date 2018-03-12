@@ -684,6 +684,13 @@ a:hover {
   top: 0;
   z-index: 0;
 }
+.main-bg {
+    background-color: rgb(35, 35, 35) !important;
+    opacity: 0.8 !important;
+}
+.level {
+    font-weight: normal
+}
 blockquote {
   font-style: italic;
   padding: 10px 0 10px 20px;
@@ -1776,7 +1783,10 @@ body {
   color: #ffffff;
 }
 .landingSection .icons-media-container .icon-block {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+}
+.landing-icon {
+    font-size: 700%;
 }
 .landingSection .mbr-text {
   color: #ffffff;

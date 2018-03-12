@@ -18,18 +18,24 @@ namespace Arteg.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
+            ViewBag.Title = "Atreg & Asian Vital";
+
             return View($"Index");
         }
 
         [HttpGet("asianvital")]
         public IActionResult AsianVital()
         {
+            ViewBag.Title = "Asian Vital";
+
             return View($"AsianVital");
         }
 
         [HttpGet("atreg")]
         public IActionResult Atreg()
         {
+            ViewBag.Title = "Atreg";
+
             return View($"Atreg");
         }
 
