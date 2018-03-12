@@ -36,8 +36,13 @@ namespace Arteg.Controllers
         [HttpPost("atreg")]
         public async Task<IActionResult> Atreg([FromForm]ContactMessage message)
         {
-            await _service.SendMail(message);
-            return View("Atreg");
+            if (ModelState.IsValid)
+            {
+                await _service.SendMail(message);
+                ViewData["Message"] = "!";
+                return View($"Atreg");
+            }
+            return LocalRedirect("/en/atreg#contactForm");
         }
     }
 }
