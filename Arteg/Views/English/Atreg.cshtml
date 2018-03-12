@@ -1,5 +1,5 @@
 ﻿<!--NavBar-->
-<section class="menu navigationBar" once="menu" id="menu2-h">
+<section class="menu navigationBar" once="menu" id="navigationBar">
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="hamburger">
@@ -12,7 +12,7 @@
         <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a asp-controller="Home" asp-action="Index">
+                    <a href="#">
                         <img src="~/assets/images/logo-3-172x70.png" alt="Atreg" title="Atreg" style="height: 3.8rem;">
                     </a>
                 </span>
@@ -21,29 +21,29 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item">
-                    <a class="nav-link link text-black display-7" href="atreg.html#content4-o">
+                    <a class="nav-link link text-black display-7" href="#profileSection">
                         <span class="mbri-briefcase mbr-iconfont mbr-iconfont-btn"></span>Profile
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link text-black display-7" href="atreg.html#content4-p">
+                    <a class="nav-link link text-black display-7" href="#servicesSection">
                         <span class="mbri-extension mbr-iconfont mbr-iconfont-btn"></span>Services
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link text-black display-7" href="atreg.html#content4-19"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>Represented Companies</a>
+                    <a class="nav-link link text-black display-7" href="#representedSection"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>Represented Companies</a>
                 </li>
                 
             </ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-secondary display-7" href="atreg.html#content4-1i"><span class="mbri-letter mbr-iconfont mbr-iconfont-btn"></span>Contact Us</a></div>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-secondary display-7" href="#contactForm"><span class="mbri-letter mbr-iconfont mbr-iconfont-btn"></span>Contact Us</a></div>
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item dropdown">
-                    <a class="nav-link link text-black dropdown-toggle display-7" href="atreg.html#content4-19" aria-expanded="false" data-toggle="dropdown-submenu">
+                    <a class="nav-link link text-black dropdown-toggle display-7" aria-expanded="false" data-toggle="dropdown-submenu">
                         <span class="mbri-globe mbr-iconfont mbr-iconfont-btn"></span>EN
                     </a>
                     <div class="dropdown-menu">
-                        <a class="text-black dropdown-item display-7" href="atreg.html#content4-19" aria-expanded="false">IT</a>
-                        <a class="text-black dropdown-item display-7" href="atreg.html#content4-19" aria-expanded="false">VN</a>
+                        <a class="text-black dropdown-item display-7" asp-controller="Italian" asp-action="Atreg" aria-expanded="false">IT</a>
+                        <a class="text-black dropdown-item display-7" asp-controller="Vietnamese" asp-action="Atreg" aria-expanded="false">VN</a>
                     </div>
                 </li>
             </ul>
@@ -63,30 +63,38 @@
                 </h2>
                 <div class="icons-media-container mbr-white">
                     <div class="card col-12 col-md-6 col-lg-3">
-                        <div class="icon-block">
-                            <a href="atreg.html#content4-o"><span class="mbr-iconfont mbri-briefcase"></span></a>
-                        </div>
-                        <h5 class="mbr-fonts-style display-5">Profile</h5>
+                        <a href="#profileSection">
+                            <div class="icon-block">
+                                <span class="mbr-iconfont mbri-briefcase"></span>
+                            </div>
+                            <h5 class="mbr-fonts-style display-5">Profile</h5>
+                        </a>
                     </div>
                     <div class="card col-12 col-md-6 col-lg-3">
-                        <div class="icon-block ">
-                            <a href="atreg.html#content4-p"><span class="mbr-iconfont mbri-extension"></span></a>
-                        </div>
-                        <h5 class="mbr-fonts-style display-5">Services</h5>
+                        <a href="#servicesSection">
+                            <div class="icon-block ">
+                                <span class="mbr-iconfont mbri-extension"></span>
+                            </div>
+                            <h5 class="mbr-fonts-style display-5">Services</h5>
+                        </a>
                     </div>
                     <div class="card col-12 col-md-6 col-lg-3">
-                        <div class="icon-block">
-                            <a href="atreg.html#content4-19"><span class="mbr-iconfont mbri-users"></span></a>
-                        </div>
-                        <h5 class="mbr-fonts-style display-5">Partners</h5>
+                        <a href="#representedSection">
+                            <div class="icon-block">
+                                <span class="mbr-iconfont mbri-users"></span>
+                            </div>
+                            <h5 class="mbr-fonts-style display-5">Partners</h5>
+                        </a>
                     </div>
                     <div class="card col-12 col-md-6 col-lg-3">
-                        <div class="icon-block">
-                            <a href="atreg.html#content4-1i"><span class="mbr-iconfont mbri-letter"></span></a>
-                        </div>
-                        <h5 class="mbr-fonts-style display-5">
-                            Contact Us
-                        </h5>
+                        <a href="#contactForm">
+                            <div class="icon-block">
+                                <span class="mbr-iconfont mbri-letter"></span>
+                            </div>
+                            <h5 class="mbr-fonts-style display-5">
+                                Contact Us
+                            </h5>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -100,7 +108,7 @@
 </section>
 
 <!--Profile Section-->
-<section class="features6 cid-qLK2QGLlv6" id="features6-k">
+<section class="features6 profileSection" id="profileSection">
     <div class="container content4 cid-qLK44o3FT0" id="content4-o">
         <div class="media-container-row text-center">
             <div class="title col-12 col-md-12">
@@ -146,7 +154,7 @@
 </section>
 
 <!--Services Section-->
-<section class="mbr-section article content12 cid-qLKhm6m6YE" id="content12-14">
+<section class="mbr-section article content12 servicesSection" id="servicesSection">
     <div class="container">
         <h3 class="text-center mbr-fonts-style display-1 text-white">
             Services
@@ -197,19 +205,19 @@
 </section>
 
 <!--Represented Companies-->
-<section class="features15 cid-qLKmyzj1di" id="features15-1a">
+<section class="features15 representedSection" id="representedSection">
     <div class="container mbr-section content4 cid-qLKmeNBUdB" id="content4-19">
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
                 <h2 class="text-center pb-3 mbr-fonts-style display-1">Represented Companies</h2>
                 <h3 class="mbr-section-subtitle text-center mbr-light mbr-fonts-style display-5">Some of the companies represented by us in Vietnam.</h3>
-                <h5 class="mbr-section-subtitle text-center mbr-fonts-style pt-4">Turn the cards for more information!</h5>
+                <h5 class="mbr-section-subtitle text-center mbr-fonts-style pt-4 turnCards">Turn the cards for more information!</h5>
             </div>
         </div>
     </div>
     <ul class="nav justify-content-center p-3 navbar-buttons mbr-section-btn" role="tablist">
-        <li class="nav-item mbr-fonts-style"><a class="nav-link active btn btn-sm btn-secondary display-7" href="#food" data-toggle="tab" role="tab" aria-selected="true">Food</a></li>
-        <li class="nav-item mbr-fonts-style"><a class="nav-link btn btn-sm btn-secondary display-7" href="#wine" data-toggle="tab" role="tab" aria-selected="true">Wine</a></li>
+        <li class="nav-item mbr-fonts-style"><a class="nav-link active btn btn-sm btn-secondary display-7" href="#food" data-toggle="tab" role="tab" aria-selected="true"><span class="fas fa-utensils pr-2"> </span> Food</a></li>
+        <li class="nav-item mbr-fonts-style"><a class="nav-link btn btn-sm btn-secondary display-7" href="#wine" data-toggle="tab" role="tab" aria-selected="true"><span class="fas fa-tint pr-2"> </span> Wine</a></li>
     </ul>
     <div class="container tab-content">
     <!--Food-->
@@ -504,7 +512,7 @@
 </section>
 
 <!--Contact Us Section-->
-<section class="mbr-section form1 cid-qLKuj6fhAF" id="form1-1f">
+<section class="mbr-section form1 contactSection" id="contactForm">
     <div class="container mbr-section content4 cid-qLKx8ut6N0" id="content4-1i">
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
@@ -554,7 +562,7 @@
 </section>
 
 <!--Footer-->
-<section once="" class="cid-qLKw8zpHAn" id="footer6-1h">
+<section once="" class="footerSection" id="footerSection">
     <div class="container">
         <div class="media-container-row align-center mbr-white">
             <div class="col-12">

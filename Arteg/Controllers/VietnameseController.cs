@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Arteg.Controllers
 {
-    [Route("it")]
+    [Route("vn")]
     public class VietnameseController : Controller
     {
         [HttpGet("")]
