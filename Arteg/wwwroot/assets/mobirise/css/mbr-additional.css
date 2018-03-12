@@ -1783,7 +1783,10 @@ body {
   color: #ffffff;
 }
 .landingSection .icons-media-container .icon-block {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+}
+.landing-icon {
+    font-size: 700%;
 }
 .landingSection .mbr-text {
   color: #ffffff;
