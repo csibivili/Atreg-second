@@ -50,7 +50,9 @@ textarea[type="hidden"] {
   display: none; }
 
 body {
-  position: relative; }
+  position: relative;
+    overflow: hidden;
+}
 
 section {
   background-position: 50% 50%;
@@ -216,8 +218,8 @@ figure[mbr-media-size] {
     width: 100% !important; } }
 /*! Buttons */
 .mbr-section-btn {
-  margin-left: -.25rem;
-  margin-right: -.25rem;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
   font-size: 0; }
 
 nav .mbr-section-btn {

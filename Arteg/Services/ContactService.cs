@@ -10,8 +10,8 @@ namespace Arteg.Services
 {
     public class ContactService : IContactService
     {
-        private readonly string _userName = "atreg.info@gmail.com";
-        private readonly string _password = "atreg2k18";
+        private const string _userName = "atreg.info@gmail.com";
+        private const string _password = "atreg2k18";
 
         public async Task SendMail(ContactMessage message)
         {

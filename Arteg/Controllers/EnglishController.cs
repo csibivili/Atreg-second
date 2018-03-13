@@ -49,7 +49,7 @@ namespace Arteg.Controllers
                 return View($"Atreg");
             }
             ViewData["Message"] = "Fail";
-            return LocalRedirect("/en/atreg#contactForm");
+            return View($"Atreg");
         }
     }
 }
