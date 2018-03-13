@@ -45,9 +45,10 @@ namespace Arteg.Controllers
             if (ModelState.IsValid)
             {
                 await _service.SendMail(message);
-                ViewData["Message"] = "!";
+                ViewData["Message"] = "Success";
                 return View($"Atreg");
             }
+            ViewData["Message"] = "Fail";
             return LocalRedirect("/en/atreg#contactForm");
         }
     }

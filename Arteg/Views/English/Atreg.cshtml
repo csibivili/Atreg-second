@@ -1,9 +1,13 @@
 ﻿@model Arteg.Models.ContactMessage
 
 @{
-    if (ViewData["Message"] != null)
+    if (String.Equals(ViewData["Message"],"Success"))
     {
         <script>window.alert('The message was sent! Thank you!')</script>
+    }
+    else if (String.Equals(ViewData["Message"], "Fail"))
+    {
+        <script>window.alert('Something went wrong. Please try again!')</script>
     }
 }
 
@@ -62,7 +66,7 @@
 
 <!--Landing Page Icon Block-->
 <section class="header12 landingSection mbr-fullscreen mbr-parallax-background" id="landingSection">
-    <div class="mbr-overlay main-bg" ></div>
+    <div class="mbr-overlay main-bg"></div>
     <div class="container">
         <div class="media-container">
             <div class="col-md-12 align-center">
@@ -222,7 +226,7 @@
 </section>
 
 <!--Represented Companies-->
-<section class="features15 representedSection" id="representedSection"  style="margin-top:-30px;">
+<section class="features15 representedSection" id="representedSection" style="margin-top:-30px;">
     <div class="container mbr-section content4 cid-qLKmeNBUdB" id="content4-19">
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
@@ -237,7 +241,7 @@
         <li class="nav-item mbr-fonts-style"><a class="nav-link btn btn-sm btn-secondary display-7" href="#wine" data-toggle="tab" role="tab" aria-selected="true"><span class="fas fa-tint pr-2"> </span> Wine</a></li>
     </ul>
     <div class="container tab-content">
-    <!--Food-->
+        <!--Food-->
         <div class="tab-pane active" id="food">
             <div class="media-container-row">
                 <div class="col-12 col-md-6 mb-4 col-lg-4">
@@ -381,7 +385,7 @@
                 </div>
             </div>
         </div>
-    <!--Wine-->
+        <!--Wine-->
         <div class="tab-pane" id="wine">
             <div class="media-container-row">
                 <div class="col-12 col-md-6 mb-4 col-lg-4">
