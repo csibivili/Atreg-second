@@ -76,6 +76,16 @@ body {
     line-height: calc( 1.4 * (1.175rem + (1.5 - 1.175) * ((100vw - 20rem) / (48 - 20))));
   }
 }
+
+@media (max-width: 340px) {
+    .display-5 {
+        font-size: 1.0rem;
+    }
+
+    h5 {
+        font-size: 1.0rem;
+    }
+}
 /* Buttons */
 .btn {
   font-weight: 500;
