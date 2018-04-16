@@ -1,10 +1,8 @@
 ﻿using Arteg.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Rewrite;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System.Net;
 
 namespace Arteg
 {
@@ -20,7 +18,7 @@ namespace Arteg
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddScoped<IContactService, ContactService>();
+            services.AddSingleton<IContactService, ContactService>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

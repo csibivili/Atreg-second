@@ -18,26 +18,38 @@ namespace Arteg.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
-            return View("Index");
+            ViewBag.Title = "Atreg & Asian Vital";
+
+            return View($"Index");
         }
 
         [HttpGet("asianvital")]
         public IActionResult AsianVital()
         {
-            return View("AsianVital");
+            ViewBag.Title = "Asian Vital";
+
+            return View($"AsianVital");
         }
 
         [HttpGet("atreg")]
         public IActionResult Atreg()
         {
-            return View("Atreg");
+            ViewBag.Title = "Atreg";
+
+            return View($"Atreg");
         }
 
         [HttpPost("atreg")]
         public async Task<IActionResult> Atreg([FromForm]ContactMessage message)
         {
-            await _service.SendMail(message);
-            return View("Atreg");
+            if (ModelState.IsValid)
+            {
+                await _service.SendMail(message);
+                ViewData["Message"] = "Success";
+                return View($"Atreg");
+            }
+            ViewData["Message"] = "Fail";
+            return View($"Atreg");
         }
     }
 }
