@@ -2055,7 +2055,8 @@ body {
 .representedSection .card-front img {
     min-width: 100%;
     width: auto;
-    max-width: 600px
+    max-width: 600px;
+    background: #ffffff
 }
 .representedSection .card_back {
     width: 100%;
@@ -2155,7 +2156,8 @@ body {
     max-width: 600px;
 }
 .card_cont {
-    border-radius: 10%
+    border-radius: 10%;
+    border: #232323 2px solid
 }
 .cid-qLKqwQUfMR .card_back {
     width: 100%;
