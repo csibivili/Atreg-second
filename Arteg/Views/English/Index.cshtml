@@ -1,40 +1,62 @@
-﻿<section class="header3 indexAtreg" id="indexAtreg">
+﻿<section class="menu navigationBar" once="menu" id="navigationBar">
+        <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm" style="position: inherit">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="mbri-globe mbr-iconfont"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                    <li class="nav-item">                       
+                        <a class="text-black dropdown-item display-7" asp-controller="Italian" asp-action="Index" aria-expanded="false">
+                            <img src="images/flags/it.png" alt="" class="m-2 p-3"/>
+                            IT
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-black dropdown-item display-7" asp-controller="Vietnamese" asp-action="Index" aria-expanded="false">
+                            <img src="images/flags/vn.png" alt="" class="m-2 p-3"/>
+                            VN
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</section>
+
+<section class="indexAtreg" id="indexAtreg">
     <div class="container indexCard">
-        <div class="media-container-row">
-            <div class="mbr-figure" style="width: 120%;">
-                <img src="assets/images/Italy_3.jpg" alt="ATREG" title="">
+        <div class="media-container-row p-lg-5">
+            <div class="mbr-figure p-3" style="width: 120%;">
+                <img src="assets/images/Italy_3.jpg" alt="ATREG" title="" class="img-fluid">
             </div>
             <div class="media-content">
-                <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1">
+                <h1 class="mbr-section-title mbr-white pb-3 display-1">
                     ATREG
                 </h1>
-                <div class="mbr-section-text mbr-white pb-3 ">
-                    <p class="mbr-text mbr-fonts-style display-5">
+                <div class="mbr-white pb-3 ">
+                    <p class="mbr-text display-5">
                         ATREG is a consulting company specialized in the commercial operations of exporting towards Vietnam.
                     </p>
                 </div>
-                <div class="mbr-section-btn"><a class="btn btn-md btn-secondary display-4" asp-controller="English" asp-action="Atreg"><span class="mbri-right mbr-iconfont mbr-iconfont-btn"></span>LEARN MORE</a></div>
+                <div class="mbr-section-btn"><a class="btn btn-md btn-secondary display-4" asp-controller="English" asp-action="Atreg"><span class="mbri-right mbr-iconfont pl-4 pr-2"></span></a></div>
             </div>
         </div>
     </div>
-
 </section>
-<section class="header3 indexAsian" id="indexAsian">
+
+<section class="indexAsian" id="indexAsian">
     <div class="container indexCard">
-        <div class="media-container-row">
-            <div class="mbr-figure" style="width: 120%;">
-                <img src="assets/images/mbr-1014x761.jpg" alt="ASIAN" title="">
+        <div class="media-container-row p-lg-5">
+            <div class="mbr-figure p-3" style="width: 120%;">
+                <img src="assets/images/mbr-1014x761.jpg" alt="ASIAN" title="" class="img-fluid">
             </div>
-
-            <div class="media-content">
-                <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1">ASIAN VITAL</h1>
-
-                <div class="mbr-section-text mbr-white pb-3 ">
-                    <p class="mbr-text mbr-fonts-style display-5">
+            <div class="media-content text-right">
+                <h1 class="mbr-section-title mbr-white pb-3 display-1">ASIAN VITAL</h1>
+                <div class="mbr-white pb-3 ">
+                    <p class="mbr-text display-5">
                         ASIAN VITAL is a consulting company specialized in the commercial operations of exporting towards Italy.
                     </p>
                 </div>
-                <div class="mbr-section-btn"><a class="btn btn-md btn-info display-4" asp-controller="English" asp-action="AsianVital"><span class="mbri-left mbr-iconfont mbr-iconfont-btn"></span>LEARN MORE</a></div>
+                <div class="mbr-section-btn"><a class="btn btn-md btn-info display-4" asp-controller="English" asp-action="AsianVital"><span class="mbri-left mbr-iconfont pl-4 pr-2"></span></a></div>
             </div>
         </div>
     </div>

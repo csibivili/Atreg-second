@@ -1517,7 +1517,6 @@ body {
     width: 100vw;
     height: 100vh;
     content: '';
-    background-color: rgba(0, 0, 0, 0.1);
     left: 0;
     bottom: 0;
     transform: translateY(100%);
