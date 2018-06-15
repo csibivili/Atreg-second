@@ -17,8 +17,7 @@ body {
     font-style: normal;
     line-height: 1.6;
 }
-.display-1 {
-  
+.display-1 {  
     font-size: 4rem;
 }
 .display-1 > .mbr-iconfont {
@@ -2055,7 +2054,9 @@ body {
     max-height: 100%;
     max-width: 600px;
     max-width: 100%;
-    background: #ffffff;    
+    background: #ffffff;
+    margin: auto;
+    display: block;
 }
 .representedSection .card_back {
     width: 100%;
