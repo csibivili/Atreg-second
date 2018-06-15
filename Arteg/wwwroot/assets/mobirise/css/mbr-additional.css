@@ -23,15 +23,13 @@ body {
 .display-1 > .mbr-iconfont {
     font-size: 6.4rem;
 }
-.display-2 {
-  
+.display-2 { 
     font-size: 2.5rem;
 }
 .display-2 > .mbr-iconfont {
     font-size: 4rem;
 }
-.display-4 {
-  
+.display-4 {  
     font-size: 1.3rem;
 }
 .display-4 > .mbr-iconfont {
@@ -44,8 +42,7 @@ body {
 .display-5 > .mbr-iconfont {
     font-size: 2.4rem;
 }
-.display-7 {
-  
+.display-7 {  
     font-size: 1.1rem;
 }
 .display-7 > .mbr-iconfont {
@@ -2049,14 +2046,24 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    margin: auto
 }
+
 .representedSection .card-front img {
     max-height: 100%;
-    max-width: 600px;
     max-width: 100%;
-    background: #ffffff;
     margin: auto;
-    display: block;
+    background: #ffffff;
+}
+
+.representedSection .card-front .placeholder {
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    background: #ffffff;
 }
 .representedSection .card_back {
     width: 100%;
@@ -2111,210 +2118,12 @@ body {
     color: #1b191a;
     text-align: left;
 }
-.cid-qLKqwQUfMR {
-    background-color: #ffffff;
-}
-.cid-qLKqwQUfMR .mbr-section-subtitle {
-    color: #767676;
-    font-weight: 300;
-}
-.cid-qLKqwQUfMR .media-container-row {
-    word-wrap: break-word;
-    word-break: break-word;
-    align-items: stretch;
-    -webkit-align-items: stretch;
-}
-.cid-qLKqwQUfMR .card_cont {
-    -o-transition: all .5s;
-    -ms-transition: all .5s;
-    -moz-transition: all .5s;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    -o-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    text-align: center;
-    background-color: #eee;
-
-}
-.cid-qLKqwQUfMR .card-front {
-    z-index: 2;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
 
 .card_cont {
     border-radius: 10%;
-    border: #232323 2px solid
+    border: #232323 2px solid !important
 }
-.cid-qLKqwQUfMR .card_back {
-    width: 100%;
-    height: 100%;
-    padding: 30px 30px;
-    color: #ffffff;
-    background-color: #2e2e2e;
-    z-index: 1;
-    margin: 0;
-    text-align: center;
-    overflow: hidden;
-    -o-transform: rotateX(-180deg);
-    -ms-transform: rotateX(-180deg);
-    -moz-transform: rotateX(-180deg);
-    -webkit-transform: rotateX(-180deg);
-    transform: rotateX(-180deg);
-}
-.cid-qLKqwQUfMR .card {
-    min-height: 300px;
-}
-.cid-qLKqwQUfMR .card:hover .card-front {
-    z-index: 1;
-    -o-transform: rotateX(180deg);
-    -ms-transform: rotateX(180deg);
-    -moz-transform: rotateX(180deg);
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-.cid-qLKqwQUfMR .card:hover .card_back {
-    z-index: 2;
-    -o-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-}
-.cid-qLKqwQUfMR .builderCard .card_back {
-    border-bottom-left-radius: 100px;
-}
-.cid-qLKqwQUfMR .builderCard .card_cont {
-    -o-backface-visibility: hidden;
-    -ms-backface-visibility: hidd;
-    -moz-backface-visibility: visible;
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
-}
-.cid-qLKqwQUfMR P {
-    color: #ffffff;
-    text-align: left;
-}
-.cid-qLKqwQUfMR H4 {
-    color: #c1272c;
-    text-align: left;
-}
-.cid-qLKsMcpA4i {
-    background-color: #ffffff;
-}
-.cid-qLKsMcpA4i .mbr-section-subtitle {
-    color: #767676;
-    font-weight: 300;
-}
-.cid-qLKsMcpA4i .media-container-row {
-    word-wrap: break-word;
-    word-break: break-word;
-    align-items: stretch;
-    -webkit-align-items: stretch;
-}
-.cid-qLKsMcpA4i .card_cont {
-    -o-transition: all .5s;
-    -ms-transition: all .5s;
-    -moz-transition: all .5s;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    -o-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    text-align: center;
-    background-color: #eee;
-}
-.cid-qLKsMcpA4i .card-front {
-    z-index: 2;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.cid-qLKsMcpA4i .card-front img {
-    min-height: 100%;
-    min-width: 100%;
-    width: auto;
-    max-width: 600px;
-}
-.cid-qLKsMcpA4i .card_back {
-    width: 100%;
-    height: 100%;
-    padding: 30px 30px;
-    color: #ffffff;
-    background-color: #ffffff;
-    z-index: 1;
-    margin: 0;
-    text-align: center;
-    overflow: hidden;
-    -o-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-}
-.cid-qLKsMcpA4i .card {
-    min-height: 300px;
-}
-.cid-qLKsMcpA4i .card:hover .card-front {
-    z-index: 1;
-    -o-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-.cid-qLKsMcpA4i .card:hover .card_back {
-    z-index: 2;
-    -o-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-}
-.cid-qLKsMcpA4i .builderCard .card_back {
-    border-bottom-left-radius: 100px;
-}
-.cid-qLKsMcpA4i .builderCard .card_cont {
-    -o-backface-visibility: hidden;
-    -ms-backface-visibility: hidd;
-    -moz-backface-visibility: visible;
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
-}
-.cid-qLKsMcpA4i P {
-    color: #c1272c;
-    text-align: left;
-}
-.cid-qLKsMcpA4i H4 {
-    color: #1b191a;
-    text-align: left;
-}
-.cid-qLKx8ut6N0 {
 
-    background-color: #2e2e2e;
-}
-.cid-qLKx8ut6N0 .mbr-section-subtitle {
-    color: #c1272c;
-    text-align: left;
-}
-.cid-qLKx8ut6N0 H2 {
-    text-align: left;
-    color: #ffffff;
-}
 .contactSection {
     padding: 80px 0px;
     background-color: #2e2e2e;
@@ -2590,22 +2399,6 @@ body {
         padding-top: 80px;
     }
 
-    .cid-qLK44o3FT0 {
-        min-height: 0px;
-    }
-
-    .cid-qLKkQ4cWga {
-        padding-bottom: 20px;
-    }
-
-    .cid-qLKkQ4cWga .section-text {
-        margin-top: 0px;
-    }
-
-    .cid-qLKkQ4cWga hr {
-        width: 80%;
-    }
-
     .representedSection {
         padding-top: 0px;
         padding-bottom: 0px;
@@ -2621,14 +2414,6 @@ body {
 
     .dropdown-menu {
         padding: 0px;
-    }
-
-    .cid-qLKmeNBUdB {
-        padding-bottom: 0px;
-    }
-
-    .cid-qLKmeNBUdB h5 {
-        margin-bottom: 0px;
     }
 }
 
