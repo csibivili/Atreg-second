@@ -2124,6 +2124,11 @@ body {
     border: #232323 2px solid !important
 }
 
+.card_cont p{
+    font-size: 1rem !important;
+    line-height: 1 !important
+}
+
 .contactSection {
     padding: 80px 0px;
     background-color: #2e2e2e;
@@ -2319,8 +2324,8 @@ body {
     padding-left: 30px;
 }
 .infoSection {
-    padding-top: 75px;
-    padding-bottom: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #ffffff;
 }
 .infoSection .mbr-section-subtitle {
