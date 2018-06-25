@@ -5,7 +5,6 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Arteg.Services
 {
     public class ContactService : IContactService
@@ -35,7 +34,7 @@ namespace Arteg.Services
                   );
                 #endregion
 
-                using (var mail = new MailMessage(message.EmailAddress, "csibivili@gmail.com"))
+                using (var mail = new MailMessage(message.EmailAddress, "info@atregconsulting.com"))
                 {
                     mail.To.Add(new MailAddress("info@atregconsulting.com"));
                     mail.From = new MailAddress(message.EmailAddress);

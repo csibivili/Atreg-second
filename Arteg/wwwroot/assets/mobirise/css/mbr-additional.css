@@ -716,7 +716,7 @@ pre {
     user-select: none;
     pointer-events: none;
     -webkit-user-drag: none;
-    user-drag: none;
+    -webkit-user-drag: none;
 }
 .mbr-section__comments .row {
     justify-content: center;
@@ -1817,8 +1817,7 @@ body {
     padding: 80px 0px;
 
 }
-.profileSection h4 {
-}
+
 .profileSection p {
     color: #767676;
     text-align: left;
@@ -1958,7 +1957,7 @@ body {
 .cid-qLKkQ4cWga .line {
     background-color: #c1272c;
     color: #c1272c;
-    align: center;
+    text-align: center;
     height: 2px;
     margin: 0 auto;
 }
@@ -2125,8 +2124,8 @@ body {
 }
 
 .card_cont p{
-    font-size: 1rem !important;
-    line-height: 1 !important
+    font-size: 1.2rem !important;
+    line-height: 1.1rem !important
 }
 
 .contactSection {
