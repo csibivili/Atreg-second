@@ -14,7 +14,7 @@ namespace Arteg.Controllers
         [HttpGet("google925c7cc039ea380c")]
         public IActionResult Certificate()
         {
-            return View("google925c7cc039ea380c");
+            return File(@"~/google925c7cc039ea380c.html", "text/html");
         }
     }
 }
