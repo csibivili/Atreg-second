@@ -10,5 +10,11 @@ namespace Arteg.Controllers
         {
             return RedirectToActionPermanent("Index", "English");
         }
+
+        [HttpGet("google925c7cc039ea380c")]
+        public IActionResult Certificate()
+        {
+            return View("google925c7cc039ea380c");
+        }
     }
 }
