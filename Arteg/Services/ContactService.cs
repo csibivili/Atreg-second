@@ -36,8 +36,6 @@ namespace Arteg.Services
 
                 using (var mail = new MailMessage(message.EmailAddress, "info@atregconsulting.com"))
                 {
-                    mail.To.Add(new MailAddress("info@atregconsulting.com"));
-                    mail.From = new MailAddress(message.EmailAddress);
                     mail.Subject = $"Message from {message.EmailAddress} on the Atreg website";
                     mail.IsBodyHtml = true;
                     mail.Body = mailBody.ToString();
